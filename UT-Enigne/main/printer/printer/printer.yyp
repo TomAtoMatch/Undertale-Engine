@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},"order":0,},
     {"id":{"name":"printer_creat_text","path":"objects/printer_creat_text/printer_creat_text.yy",},"order":0,},
     {"id":{"name":"TESTROOM","path":"rooms/TESTROOM/TESTROOM.yy",},"order":0,},
   ],
