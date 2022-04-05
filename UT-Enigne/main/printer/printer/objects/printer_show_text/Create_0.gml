@@ -1,5 +1,8 @@
 /// @description Input your code.
 char = "";
-colour = c_white;
+draw_colour = c_white;
 font = Font1;
 shake = 0;
+mid_x = x;
+mid_y = y;
+timer = 0;

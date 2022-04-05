@@ -1,8 +1,10 @@
 {
   "resources": [
+    {"id":{"name":"snd_talk","path":"sounds/snd_talk/snd_talk.yy",},"order":0,},
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},"order":0,},
     {"id":{"name":"printer_creat_text","path":"objects/printer_creat_text/printer_creat_text.yy",},"order":0,},
     {"id":{"name":"printer_show_text","path":"objects/printer_show_text/printer_show_text.yy",},"order":1,},
+    {"id":{"name":"print","path":"scripts/print/print.yy",},"order":0,},
     {"id":{"name":"TESTROOM","path":"rooms/TESTROOM/TESTROOM.yy",},"order":0,},
   ],
   "Options": [
