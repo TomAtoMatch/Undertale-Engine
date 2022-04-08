@@ -1,50 +1,45 @@
-/// @description Input your code.
-
-enter();
-color();
-shake_change();
-
-text_max_num = string_length(text);
-next_char_num = now_char_num + 1;
-now_char = string_char_at(text,now_char_num+1);
-next_char = string_char_at(text,next_char_num+1);
-text_now_x = text_start_x + text_x_sapce * line_char_num;
-if(now_char_num < text_max_num)
+max_num = string_length(text);
+now_char = string_copy(text,0,1);
+next_char = string_copy(text,1,1);
+if(max_num > 0)
 {
+	if(keyboard_check_pressed(ord("X")))
+	{
+		text_wait = 0;
+	}
 	timer++;
-	if(timer == text_wait)
+	if(timer >= text_wait)
 	{
-		creat(now_char,text_colour,text_font,text_shake);
-		show_debug_message("now_char: "+string(now_char)+"\nnow_char_num:"+string(now_char_num));
 		timer = 0;
-		now_char_num++;
-		line_char_num++;
-	}
-	if(keyboard_check_pressed(ord("X")) && can_skip == true)
-	{
-		for(var i = now_char_num;i<text_max_num;i++)
+		now_num += 1;
+		
+		if(next_char == "$")
 		{
-			creat(now_char,text_colour,text_font,text_shake);
-			now_char_num++;
-			enter();
-			color();
-			shake_change();
-
-			text_max_num = string_length(text);
-			next_char_num = now_char_num + 1;
-			now_char = string_char_at(text,now_char_num+1);
-			next_char = string_char_at(text,next_char_num+1);
-		}
-	}
-}else
-{
-	if(keyboard_check_pressed(ord("Z")))
-	{
-		for(var i = 0;i < text_max_num;i++)
+			text = string_delete(text,string_pos("$",text),1);
+			now_x = text_start_x;
+			now_y += text_start_y;
+			
+		}else if(next_char == ":")
 		{
-			instance_destroy(text_cur[i]);
+			
+		}else{
+			max_num = string_length(text);
+			now_char = string_copy(text,0,1);
+			next_char = string_copy(text,1,1);
+			if(next_char != " ")&&(text_wait != 0)
+			{
+				audio_stop_sound(text_sound);
+				audio_play_sound(text_sound,10,0);
+			}
+			text_current[now_num] = instance_create_depth(now_x,now_y,-100,printer_show_text);
+			text_current[now_num].char = now_char;
+			text_current[now_num].draw_colour = text_colour;
+			text_current[now_num].font = text_font;
+			text_current[now_num].shake = text_shake;
+			text = string_delete(text,1,1);
+			now_x += text_x_space;
 		}
-		instance_destroy();
+		
+		
 	}
 }
-

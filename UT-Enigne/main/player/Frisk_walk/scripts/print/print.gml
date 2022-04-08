@@ -1,5 +1,5 @@
 // gamemakerSudio2.3.0的脚本资产已更改，请参见// https://help.yoyogames.com/hc/en-us/articles/360005277377
-function print(text,text_x,text_y,text_x_sapce = 18,text_y_space = 20,text_colour = c_white,text_shake = 0,text_font = Font1,text_sound = snd_talk)
+function print(text,text_x,text_y,text_x_sapce = 18,text_y_space = 20,text_colour = c_white,text_shake = 0,text_font = Font1,text_sound = snd_talk,text_wait = 5)
 {
 	var P = instance_create_depth(text_x,text_y,-10,printer_creat_text);
 	P.text = text;
@@ -9,4 +9,7 @@ function print(text,text_x,text_y,text_x_sapce = 18,text_y_space = 20,text_colou
 	P.text_y_space = text_y_space;
 	P.text_colour = text_colour;
 	P.text_sound = text_sound;
+	P.text_font = text_font;
+	P.text_shake = text_shake;
+	P.text_wait = text_wait;
 }

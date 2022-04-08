@@ -4,6 +4,4 @@ need_print_text = ds_list_create();
 talk_num = 0;
 x1 = 0;
 y1 = 0;
-x2 = 0;
-y2 = 0;
-depth = 100;
+depth = 0;

@@ -4,6 +4,7 @@
     {"id":{"name":"frisk_main","path":"objects/frisk_main/frisk_main.yy",},"order":0,},
     {"id":{"name":"printer_show_text","path":"objects/printer_show_text/printer_show_text.yy",},"order":1,},
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},"order":0,},
+    {"id":{"name":"spr_info","path":"sprites/spr_info/spr_info.yy",},"order":5,},
     {"id":{"name":"snd_talk","path":"sounds/snd_talk/snd_talk.yy",},"order":0,},
     {"id":{"name":"info_text","path":"objects/info_text/info_text.yy",},"order":1,},
     {"id":{"name":"wall","path":"objects/wall/wall.yy",},"order":0,},
