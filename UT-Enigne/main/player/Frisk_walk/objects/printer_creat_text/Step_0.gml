@@ -17,11 +17,12 @@ if(max_num > 0)
 		{
 			text = string_delete(text,string_pos("$",text),1);
 			now_x = text_start_x;
-			now_y += text_start_y;
+			now_y += text_y_space;
 			
 		}else if(next_char == ":")
 		{
-			
+			text_shake = real(string_copy(text,string_pos(":",text)+1,1));
+			text = string_delete(text,1,2);
 		}else{
 			max_num = string_length(text);
 			now_char = string_copy(text,0,1);
@@ -41,5 +42,12 @@ if(max_num > 0)
 		}
 		
 		
+	}
+}
+else{
+	if(keyboard_check_pressed(ord("Z")))
+	{
+		instance_destroy();
+		instance_destroy(printer_show_text);
 	}
 }
