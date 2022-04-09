@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "spr_billboard",
-    "path": "sprites/spr_billboard/spr_billboard.yy",
+    "name": "npc",
+    "path": "sprites/npc/npc.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "wall",
-    "path": "objects/wall/wall.yy",
+    "name": "billboard",
+    "path": "objects/billboard/billboard.yy",
   },
   "physicsObject": true,
   "physicsSensor": false,
@@ -23,14 +23,14 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [
-    {"x":4.0,"y":0.0,},
-    {"x":16.0,"y":0.0,},
-    {"x":16.0,"y":15.0,},
-    {"x":4.0,"y":15.0,},
+    {"x":0.0,"y":14.0,},
+    {"x":23.0,"y":14.0,},
+    {"x":23.0,"y":25.0,},
+    {"x":0.0,"y":25.0,},
   ],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"frisk_main","path":"objects/frisk_main/frisk_main.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -39,7 +39,7 @@
     "path": "folders/物体/wall/Billboard.yy",
   },
   "resourceVersion": "1.0",
-  "name": "billboard",
+  "name": "test_npc",
   "tags": [],
   "resourceType": "GMObject",
 }
