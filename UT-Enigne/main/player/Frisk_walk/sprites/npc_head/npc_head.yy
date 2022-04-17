@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"npc_head","path":"sprites/npc_head/npc_head.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "npc_head",
     "tags": [],
     "resourceType": "GMSequence",

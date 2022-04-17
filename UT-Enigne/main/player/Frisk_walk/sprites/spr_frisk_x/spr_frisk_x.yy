@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_frisk_x","path":"sprites/spr_frisk_x/spr_frisk_x.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_frisk_x",
     "tags": [],
     "resourceType": "GMSequence",

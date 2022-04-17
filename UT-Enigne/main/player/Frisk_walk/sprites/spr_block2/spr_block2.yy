@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_block2","path":"sprites/spr_block2/spr_block2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_block2",
     "tags": [],
     "resourceType": "GMSequence",

@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_frisk_down","path":"sprites/spr_frisk_down/spr_frisk_down.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_frisk_down",
     "tags": [],
     "resourceType": "GMSequence",
