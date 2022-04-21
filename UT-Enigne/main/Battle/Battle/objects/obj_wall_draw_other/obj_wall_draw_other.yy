@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_wall_block",
-    "path": "sprites/spr_wall_block/spr_wall_block.yy",
+    "name": "spr_wall_back",
+    "path": "sprites/spr_wall_back/spr_wall_back.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,7 +21,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_main_player_soul","path":"objects/obj_main_player_soul/obj_main_player_soul.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -30,7 +31,7 @@
     "path": "folders/物体/wall.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_wall_block",
+  "name": "obj_wall_draw_other",
   "tags": [],
   "resourceType": "GMObject",
 }
